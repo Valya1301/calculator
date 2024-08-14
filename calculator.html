@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button class="btn" onclick="clearDisplay()">AC</button>
+            <button class="btn" onclick="toggleSign()">+/-</button>
+            <button class="btn" onclick="appendValue('%')">%</button>
+            <button class="btn" onclick="appendValue('/')">÷</button>
+            <button class="btn" onclick="appendValue('7')">7</button>
+            <button class="btn" onclick="appendValue('8')">8</button>
+            <button class="btn" onclick="appendValue('9')">9</button>
+            <button class="btn" onclick="appendValue('*')">×</button>
+            <button class="btn" onclick="appendValue('4')">4</button>
+            <button class="btn" onclick="appendValue('5')">5</button>
+            <button class="btn" onclick="appendValue('6')">6</button>
+            <button class="btn" onclick="appendValue('-')">-</button>
+            <button class="btn" onclick="appendValue('1')">1</button>
+            <button class="btn" onclick="appendValue('2')">2</button>
+            <button class="btn" onclick="appendValue('3')">3</button>
+            <button class="btn" onclick="appendValue('+')">+</button>
+            <button class="btn  btn-zero" onclick="appendValue('0')">0</button>
+            <button class="btn" onclick="appendValue('.')">.</button>
+            <button class="btn btn-equal" onclick="calculate()">=</button>
+            
+            
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
